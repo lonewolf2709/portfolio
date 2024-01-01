@@ -1,0 +1,28 @@
+.container1{
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+    color:white;
+    h1{
+        margin-left: 15px;
+    }
+}
+.cardsslider{
+    text-align:center;
+    display: flex;
+    flex-direction: row;
+    gap:45px;
+    /* margin-left: 10px;
+    margin-right:10px; */
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right:auto;
+}
+.heading-p{
+    color:aqua;
+    font-family: 'Signika', sans-serif;
+    text-align: center;
+    padding-bottom:15px;
+    font-size:1.7rem;
+}

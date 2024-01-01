@@ -1,0 +1,28 @@
+.snowfall-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+  }
+  
+  .snowfall {
+    position: absolute;
+    background-color: #cbc0fd;
+    border-radius: 50%; /* Make flakes circular */
+    animation: fall linear infinite;
+    opacity: 0; /* Hide flakes initially */
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(0) rotate(0deg) ;
+      opacity: 1; /* Hide flakes at the top */
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg) scale(0.5);
+      opacity: 0; /* Show flakes at the bottom */
+    }
+  }

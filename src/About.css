@@ -1,0 +1,42 @@
+.main{
+    color:aqua;
+    padding-top:20px;
+    padding-bottom: 60px;
+    margin-bottom:50px;
+}
+.head{
+    font-family: 'Signika', sans-serif;
+    text-align: center;
+    padding-bottom:15px;
+    font-size:1.7rem;
+}
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap:30px;
+}
+.content{
+    /* font-family: 'Asap Condensed', sans-serif; */
+    font-family: 'Kanit', sans-serif;
+    /* font-family: 'Yanone Kaffeesatz', sans-serif; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10%;
+    h3{
+        font-size:1.4rem;
+    }
+    p{
+        font-size:1.2rem;
+    }
+}
+.about-image{
+    margin-left: auto;
+    margin-right: auto;
+    /* text-align: center; */
+    width:80%;
+    /* height:130%; */
+    border: 2px solid white;
+    border-radius:20px;
+    object-fit: contain;
+}

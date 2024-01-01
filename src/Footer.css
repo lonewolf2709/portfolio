@@ -1,0 +1,12 @@
+.footer-main{
+    font-family: 'Kanit', sans-serif;
+    color:aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(48,57,65);
+    padding-bottom: 10px;
+}
+.icon{
+    margin-right:5px;
+}
