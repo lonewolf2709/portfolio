@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import AcUnitIcon from '@mui/icons-material/AcUnit';
 import './Snowfall.css';
 
 const Snowfall = () => {
@@ -11,8 +12,8 @@ const Snowfall = () => {
     for (let i = 0; i < flakesCount; i++) {
       newSnowflakes.push({
         left: Math.random() * window.innerWidth,
-        animationDuration: Math.random() * 8 + 4, // Decreased dropping speed
-        size: Math.random() * 8 + 2, // Adjusted flake size
+        animationDuration: Math.random() * 8 + 4,
+        size: Math.random() * 1.5 , // Decreased the size range
       });
     }
 
@@ -22,16 +23,17 @@ const Snowfall = () => {
   return (
     <div className="snowfall-container">
       {snowflakes.map((flake, index) => (
-        <div
+        <AcUnitIcon
           key={index}
           className="snowfall"
           style={{
             left: flake.left + 'px',
             animationDuration: flake.animationDuration + 's',
-            width: flake.size + 'px',
-            height: flake.size + 'px',
+            fontSize: flake.size + 'rem',
+            color: 'aliceblue', // Set the color to white or the desired color
+            background: 'transparent', // Set the background to transparent
           }}
-        ></div>
+        />
       ))}
     </div>
   );
